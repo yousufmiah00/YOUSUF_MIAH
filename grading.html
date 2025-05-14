@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Computer Science Project</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h2 style="text-align: center;">Computer Science Project</h2>
+
+    <form id="gradingForm">
+      <label>Group Members:</label>
+      <input type="text" id="groupMembers" required />
+
+      <label>Group Number:</label>
+      <input type="text" id="groupNumber" required />
+
+      <label>Project Title:</label>
+      <input type="text" id="projectTitle" required />
+
+      <h3 style="margin-top: 20px;">Criteria</h3>
+
+      <table>
+        <tr>
+          <th>Criteria</th>
+          <th>Developing (0–10)</th>
+          <th>Accomplished (10–15)</th>
+        </tr>
+        <tr>
+          <td>Articulate requirements</td>
+          <td><input type="number" id="criteria1" min="0" max="10" /></td>
+          <td><input type="number" id="criteria1b" min="10" max="15" /></td>
+        </tr>
+        <tr>
+          <td>Choose appropriate tools and methods</td>
+          <td><input type="number" id="criteria2" min="0" max="10" /></td>
+          <td><input type="number" id="criteria2b" min="10" max="15" /></td>
+        </tr>
+        <tr>
+          <td>Give clear and coherent oral presentation</td>
+          <td><input type="number" id="criteria3" min="0" max="10" /></td>
+          <td><input type="number" id="criteria3b" min="10" max="15" /></td>
+        </tr>
+        <tr>
+          <td>Functioned well as a team</td>
+          <td><input type="number" id="criteria4" min="0" max="10" /></td>
+          <td><input type="number" id="criteria4b" min="10" max="15" /></td>
+        </tr>
+      </table>
+
+      <label>Total:</label>
+      <input type="text" id="totalScore" readonly />
+
+      <label>Judge's Name:</label>
+      <input type="text" id="judgeName" readonly />
+
+      <label>Comments:</label>
+      <textarea id="comments"></textarea>
+
+      <button type="submit">Submit Grades</button>
+    </form>
+
+    <p id="success" class="success"></p>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
